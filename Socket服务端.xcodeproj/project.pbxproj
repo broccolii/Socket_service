@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A471338C1BEA075E00FCA2FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471338B1BEA075E00FCA2FC /* AppDelegate.swift */; };
+		A471338E1BEA075E00FCA2FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471338D1BEA075E00FCA2FC /* ViewController.swift */; };
+		A47133901BEA075E00FCA2FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471338F1BEA075E00FCA2FC /* Assets.xcassets */; };
+		A47133931BEA075E00FCA2FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47133911BEA075E00FCA2FC /* Main.storyboard */; };
+		A47133CB1BEA0A2100FCA2FC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A47133CA1BEA0A2100FCA2FC /* GCDAsyncSocket.m */; };
+		A47133CE1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A47133CD1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A47133881BEA075E00FCA2FC /* Socket服务端.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Socket服务端.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A471338B1BEA075E00FCA2FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A471338D1BEA075E00FCA2FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A471338F1BEA075E00FCA2FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47133921BEA075E00FCA2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47133941BEA075E00FCA2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47133C91BEA0A2100FCA2FC /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		A47133CA1BEA0A2100FCA2FC /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		A47133CC1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A47133CD1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		A47133CF1BEA0CEA00FCA2FC /* ServiceSocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServiceSocket-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47133851BEA075E00FCA2FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A471337F1BEA075E00FCA2FC = {
+			isa = PBXGroup;
+			children = (
+				A47133C81BEA0A2100FCA2FC /* GCDAsynSocket */,
+				A471338A1BEA075E00FCA2FC /* Socket服务端 */,
+				A47133891BEA075E00FCA2FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A47133891BEA075E00FCA2FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47133881BEA075E00FCA2FC /* Socket服务端.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A471338A1BEA075E00FCA2FC /* Socket服务端 */ = {
+			isa = PBXGroup;
+			children = (
+				A47133911BEA075E00FCA2FC /* Main.storyboard */,
+				A471338B1BEA075E00FCA2FC /* AppDelegate.swift */,
+				A471338D1BEA075E00FCA2FC /* ViewController.swift */,
+				A471338F1BEA075E00FCA2FC /* Assets.xcassets */,
+				A47133CF1BEA0CEA00FCA2FC /* ServiceSocket-Bridging-Header.h */,
+				A47133941BEA075E00FCA2FC /* Info.plist */,
+			);
+			path = "Socket服务端";
+			sourceTree = "<group>";
+		};
+		A47133C81BEA0A2100FCA2FC /* GCDAsynSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A47133CC1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.h */,
+				A47133CD1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.m */,
+				A47133C91BEA0A2100FCA2FC /* GCDAsyncSocket.h */,
+				A47133CA1BEA0A2100FCA2FC /* GCDAsyncSocket.m */,
+			);
+			path = GCDAsynSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47133871BEA075E00FCA2FC /* Socket服务端 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47133971BEA075E00FCA2FC /* Build configuration list for PBXNativeTarget "Socket服务端" */;
+			buildPhases = (
+				A47133841BEA075E00FCA2FC /* Sources */,
+				A47133851BEA075E00FCA2FC /* Frameworks */,
+				A47133861BEA075E00FCA2FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Socket服务端";
+			productName = "Socket服务端";
+			productReference = A47133881BEA075E00FCA2FC /* Socket服务端.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A47133801BEA075E00FCA2FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Broccoli;
+				TargetAttributes = {
+					A47133871BEA075E00FCA2FC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = A47133831BEA075E00FCA2FC /* Build configuration list for PBXProject "Socket服务端" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A471337F1BEA075E00FCA2FC;
+			productRefGroup = A47133891BEA075E00FCA2FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47133871BEA075E00FCA2FC /* Socket服务端 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47133861BEA075E00FCA2FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47133901BEA075E00FCA2FC /* Assets.xcassets in Resources */,
+				A47133931BEA075E00FCA2FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A47133841BEA075E00FCA2FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47133CE1BEA0C9700FCA2FC /* GCDAsyncUdpSocket.m in Sources */,
+				A47133CB1BEA0A2100FCA2FC /* GCDAsyncSocket.m in Sources */,
+				A471338E1BEA075E00FCA2FC /* ViewController.swift in Sources */,
+				A471338C1BEA075E00FCA2FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A47133911BEA075E00FCA2FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47133921BEA075E00FCA2FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47133951BEA075E00FCA2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Socket服务端/ServiceSocket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A47133961BEA075E00FCA2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Socket服务端/ServiceSocket-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A47133981BEA075E00FCA2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Socket服务端/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Broccoli.Socket---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Socket服务端/ServiceSocket-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		A47133991BEA075E00FCA2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Socket服务端/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Broccoli.Socket---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Socket服务端/ServiceSocket-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A47133831BEA075E00FCA2FC /* Build configuration list for PBXProject "Socket服务端" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47133951BEA075E00FCA2FC /* Debug */,
+				A47133961BEA075E00FCA2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47133971BEA075E00FCA2FC /* Build configuration list for PBXNativeTarget "Socket服务端" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47133981BEA075E00FCA2FC /* Debug */,
+				A47133991BEA075E00FCA2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A47133801BEA075E00FCA2FC /* Project object */;
+}
